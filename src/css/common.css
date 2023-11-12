@@ -1,0 +1,90 @@
+@charset "utf-8";
+@import '../css/views.css';
+
+*{margin:0; padding:0;}
+body,html{margin:0;}
+ul li, ol li{list-style:none;}
+div,h1,h2,h3,h4,h5,p{margin:0;}
+a{text-decoration: none;}
+a:visited{color:#682d2d;}
+
+/*공통 header*/
+
+header{
+
+    height:60px;
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+
+}
+
+header .logo{  }
+header .logo a{ 
+
+
+}
+header .logo a img{ 
+
+    height: 35px; 
+    text-align: center; 
+    display: block;
+}
+header .menu{}
+header .menu ul{ display: flex; }
+header .menu ul li{ margin: 0 15px;}
+header .menu ul li a{
+
+    display: block;
+    color:#aaa;
+    font-size: 14px;
+    text-transform: capitalize;
+
+}
+
+header .menu ul li:hover a{
+
+    color:#ff0000;
+
+}
+
+header .mypage{
+
+    width: 110px;
+    display: flex;
+    justify-content: flex-end;
+
+
+}
+
+header .mypage ul{ display: flex;}
+header .mypage ul li{ margin: 0 10px; }
+header .mypage ul li a{
+
+    display: block;
+    width:16px;
+    height:16px;
+    background-size: contain;
+    background-position: 50% 50%;
+    filter: invert(100%);
+
+}
+
+header .mypage ul li:nth-child(1) a{
+
+    background-image: url(../assets/img/search_icon.svg);
+}
+header .mypage ul li:nth-child(2) a{
+
+    background-image: url(../assets/img/user_icon.svg);
+}
+header .mypage ul li:nth-child(3) a{
+
+    background-image: url(../assets/img/search_icon.svg);
+}
+header .mypage ul li:nth-child(4) a{
+
+    background-image: url(../assets/img/user_white.svg);
+}
