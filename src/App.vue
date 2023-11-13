@@ -17,6 +17,7 @@
       </div>
   </header>
   <router-view />
+  <Footer />
   </div>
 </template>
 
@@ -42,6 +43,7 @@ import History from './views/HistoryView.vue';
 import Biff2023 from './views/Biff2023View.vue';
 import Community from './views/CommunityView.vue';
 import Home from './views/MainView.vue';
+import Footer from './views/FooterView.vue';
 
 
 export default {
@@ -52,7 +54,8 @@ export default {
     Home,
     History,
     Biff2023,
-    Community
+    Community,
+    Footer
  
   },
 

@@ -8,11 +8,17 @@ div,h1,h2,h3,h4,h5,p{margin:0;}
 a{text-decoration: none;}
 a:visited{color:#682d2d;}
 
+body {
+
+    background-color: #000;
+    overflow-x: hidden;
+
+}
 /*공통 header*/
 
 header{
 
-    height:60px;
+    height:80px;
     background-color: #000;
     display: flex;
     justify-content: space-between;
@@ -87,4 +93,104 @@ header .mypage ul li:nth-child(3) a{
 header .mypage ul li:nth-child(4) a{
 
     background-image: url(../assets/img/user_white.svg);
+}
+
+
+/*footer*/
+
+footer{
+
+    width: 100%;
+    padding: 50px 0px;
+    margin:0 auto;
+    background-color: #000;
+    overflow: hidden;
+}
+
+footer .wrap{
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer .wrap .footer_info{
+
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+footer .wrap .footer_info .box{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+footer .wrap .footer_info .box .logo{
+
+    
+}
+footer .wrap .footer_info .box .logo img{
+
+    height:30px;
+    text-align: center;
+}
+
+footer .wrap .footer_info .box .adressInfo{
+
+    padding: 10px;
+    
+}
+
+footer .wrap .footer_info .box .adressInfo li{
+
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+
+footer .wrap .footer_info .box .adressInfo li span{
+
+    color:#fff;
+    font-size: 15px;
+    
+}
+
+footer .wrap .footer_link{}
+
+footer .wrap .footer_link .link_content{
+
+    float:left;
+}
+
+footer .wrap .footer_link ul li{
+
+    padding: 5px;
+    float:left;
+
+}
+
+footer .wrap .footer_link ul li a{
+
+    color:#979797;
+}
+
+footer .wrap .footer_link ul li a:hover{
+
+    color:#fff;
+
+}
+footer .wrap .footer_link ul li span{
+
+    font-size: 11px;
+    color:#fff;
+    
 }

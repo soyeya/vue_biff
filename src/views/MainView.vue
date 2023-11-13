@@ -1,45 +1,59 @@
 <template>
- <section id="main">
-            <iframe :src="movieItems[randIndex][0]" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe >
-            <div class="video_dark"></div>
-            <div class="wrap">
-                <div class="main_cont">
-                    <div class="content">
-                        <img src="../assets/img/logo2.svg" alt="">
-                        <h2>{{movieItems[randIndex][1]}}</h2>
-                    </div>
-                </div>
-            </div>
-</section>
+<div id="mainCotent">
+ <mainSwiper />
+ <todayMovie />
+ <div class="banner_middle">
+    <div class="wrap">
+        <div class="txt_part">
+            <a href="#">제 28회 부산 국제 영화제 수상작 및 수상자</a>
+        </div>
+    </div>
+</div>
+<Films />
+<Review />
 
+</div>
 
 </template>
 
 
 <script>
+
+import mainSwiper from '@/components/MainSwiper.vue';
+import todayMovie from '@/components/TodayMovie.vue';
+import Films from '@/components/Films.vue';
+import Review from '@/components/Review.vue';
+
     
  export default {
  
   name : "home",
-    data : () => {
 
-        return{
-        
-            movieItems : [
-
-               [`https://www.youtube.com/embed/YStNQF5cv6E?si=23kb_sq7uHZIBREh?autoplay=1&mute=1&playsinline=1` , "biff"],
-               [`https://www.youtube.com/embed/jOwtBaw8J78?si=l_BPjpP51S8BRofi?autoplay=1&mute=1&playsinline=1` , "2023biff"],
-               [`https://www.youtube.com/embed/rVknMnmNu2M?si=YJRBNi1j64h68uUM?autoplay=1&mute=1&playsinline=1` , "공식상영작"],
-               [`https://www.youtube.com/embed/DZR7M-XOg2Q?si=ZAYrAsIM8qYqkO-f?autoplay=1&mute=1&playsinline=1`, "행사안내"]
-
-            ],
-
-            randIndex : Math.floor(Math.random() * 4)
-
-        }
+   components : {
+    
+     mainSwiper,
+     todayMovie,
+     Films,
+     Review
 
     },
 
+    data : () => {
+
+        return{
+
+          slide_img : [
+
+                "poster03.png" ,
+                "poster04.png" ,
+                "poster05.png" ,
+                "poster01.png" ,
+    
+            ]
+
+        }
+
+    }
 
  
  }
