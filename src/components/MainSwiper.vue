@@ -1,18 +1,17 @@
 <template>
 <section id="main">
-  <div id="slider">
-            <div class="slider_frame">
-                <div v-for="list in slide_img" class="slide">
-                     <div class="bgImg"></div>
-                    <div class="dark"></div>
-                </div>
-            </div>
-         <div class="wrap">
+ <swiper 
+    class="swiper-wrapper" :options="swiperOption">
+      <swiper-slide class="slides slide1"></swiper-slide>
+      <swiper-slide class="slides slide2"></swiper-slide>
+      <swiper-slide class="slides slide3"></swiper-slide>
+      <swiper-slide class="slides slide4"></swiper-slide>
+  </swiper>
+   <div class="slideText">
             <div class="text_part">
                 <h2>지금부터 당신의 영화가 시작됩니다.</h2>
-                <a href="#">상영작 보러가기</a>
+                <router-link to="/공식상영작"><a href="#">상영작 보러가기</a></router-link to="/">
             </div>
-        </div>
         </div>
  </section>
 
@@ -20,26 +19,45 @@
 
 <script>
 
+import { Swiper, SwiperSlide } from 'vue-awesome-swiper';
+import '../swiper/swiper.css';
+
  export default{
   
    name : "mainSwiper",
+   components : {
+   
+      Swiper,
+      SwiperSlide
+
+   
+    },
    data(){
-   
-   
-        return {
 
-            slide_img : [
+    return{
 
-                "poster03.png" ,
-                "poster04.png" ,
-                "poster05.png" ,
-                "poster01.png" ,
-    
-        ]
+      swiperOption : {
+      
+          slidesPerView: 1,
+          spaceBetween: 30,
+          loop: true,
+          slidesPerGroup: 1,
+          
+          autoplay : {
+
+           delay : 2500
+
+           },
+
+          parallax: true,
+          speed: 600
+
       }
-   
+
+    }
+     
    }
- 
+   
  }
 
 </script>

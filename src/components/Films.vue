@@ -4,10 +4,9 @@
             <div class="title">
                 <h2>Out Films Now</h2>
             </div>
-
         <div class="cont">
-            <div class="box"  v-for="list in shoot" >
-            <div class="shoot_bg"></div>
+            <div class="box" v-for="list in shoot">
+            <img :src="require(`@/assets/img/${list.img}`)">
                 <div class="txt_part">
                     <p>{{list.title}}</p>
                     <a href="">{{list.name}}</a>

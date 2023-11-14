@@ -6,7 +6,7 @@
       </div>
       <div class="menu">
           <ul>
-              <li v-for="list in menuList"><router-link :to="list">{{list}}</router-link></li>
+              <li v-for="list in menuList"><router-link :to="list.href">{{list.name}}</router-link></li>
           </ul>
       </div>
       <div class="mypage">
@@ -39,9 +39,9 @@
 
 <script>
 
+import axios from 'axios';
 import History from './views/HistoryView.vue';
 import Biff2023 from './views/Biff2023View.vue';
-import Community from './views/CommunityView.vue';
 import Home from './views/MainView.vue';
 import Footer from './views/FooterView.vue';
 
@@ -54,7 +54,6 @@ export default {
     Home,
     History,
     Biff2023,
-    Community,
     Footer
  
   },
@@ -65,7 +64,9 @@ export default {
 
         menuList : [
 
-            "biff" , "2023BIFF" , "공식상영작" , "community"
+           { name : "biff" , href : "/biff" },
+           { name : "2023Biff" , href : "/2023biff"},
+           { name : "공식상영작" , href : "/screening"}
 
         ]
 
