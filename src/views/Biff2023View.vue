@@ -73,9 +73,7 @@ import axios from 'axios';
    async created() {
 
     const {data} = await axios.get("/json/Biff2023.json");
-    console.log(data);
     this.yearBox = data;
-    console.log(this.yearBox);
 
 
    }

@@ -48,7 +48,6 @@
   async created(){
      
     const {data} = await axios.get('/json/History.json');
-    console.log(data);
     this.biffBox = data;
   
   },
@@ -66,25 +65,25 @@
 
       ImageOpacity[0].classList.add("active");
 
-     }else{}
+     }else{ ImageOpacity[0].classList.remove("active"); }
 
      if(scrollY >  BoxHeight){
      
       ImageOpacity[1].classList.add("active");
 
-      }else{}
+      }else{ ImageOpacity[1].classList.remove("active"); }
 
      if(scrollY >  BoxHeight * 2){
      
       ImageOpacity[2].classList.add("active");
 
-      }else{}
+      }else{ ImageOpacity[2].classList.remove("active"); }
 
      if(scrollY >  BoxHeight * 3){
      
       ImageOpacity[3].classList.add("active");
 
-      }else{}
+      }else{ ImageOpacity[3].classList.remove("active"); }
 
      }
   

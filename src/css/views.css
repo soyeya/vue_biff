@@ -444,23 +444,17 @@ a:visited{color:#333;}
 
 }
 
-#review .dark .wrap .slider_cover .slider.move{
-
-    transition: transform 1s;
-
-}
-
 
 #review .dark .wrap .slider_cover .slider .slide{
 
    width:calc(100% / 3);
+   height:300px;
    display: flex;
    flex-direction: column;
    justify-content: center;
    text-align: center;
 
 }
-
 
 
 #review .dark .wrap .slider_cover .slider .slide p{
@@ -867,4 +861,127 @@ a:visited{color:#333;}
     width: 30px;
     height: 30px;
 
+}
+
+
+/* ScreenView */
+
+
+
+#screenWrap{
+
+    width: 100%;
+    height: 100%;
+    margin:0 auto;
+    background-color: #fff;
+
+}
+
+#screenWrap .bigTitle{
+
+    color:#000;
+    font-size: 50px;
+    font-weight: 900;
+    letter-spacing: -1px;
+    padding: 200px 0px 0px;
+}
+
+#screenWrap .screenBox{
+
+    margin:0 auto;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap:wrap;
+
+}
+
+#screenWrap .screenBox ul{
+
+    width:calc(30%);
+    height:500px;
+    margin:0 auto;
+    float:left;
+    opacity:0;
+    transform: translateY(50px);
+    
+}
+
+#screenWrap .screenBox ul.active{
+
+    transform: translateY(0px);
+    opacity:1;
+    transition: 800ms;
+}
+
+#screenWrap .screenBox ul li{
+
+    margin:5px;
+    text-align: left;
+
+}
+
+#screenWrap .screenBox ul li .imgBox{
+
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+#screenWrap .screenBox ul li .imgBox img{
+
+   height:150%;
+
+}
+
+#screenWrap .screenBox ul li .imgBox:hover img{
+
+    transform: scale(1.1);
+    transition: transform 500ms;
+
+}
+
+#screenWrap .screenBox ul li span{
+
+    padding: 5px 15px;
+    border-radius: 30px;
+    background-color: #333;
+    color:#fff;
+    font-size: 13px;
+    margin-top: 5px;
+    display: inline-block;
+}
+
+#screenWrap .screenBox ul li a{
+
+    color:#000;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: -1px;
+    display:inline-block;
+    margin-top: 10px;
+}
+#screenWrap .screenBox ul li p{
+
+    font-size: 13px;
+    color:#888;
+    padding: 0px 30px 0px 0px;
+    line-height: 1;
+
+
+}
+
+#screenWrap .screenBox ul li:last-child p{
+
+    background-color: #f3edde;
+    color:#ba9b52;
+    font-weight: 900;
+    display: inline;
+    font-size: 13px;
+    padding: 0px;
 }

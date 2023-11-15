@@ -10,7 +10,7 @@
    <div class="slideText">
             <div class="text_part">
                 <h2>지금부터 당신의 영화가 시작됩니다.</h2>
-                <router-link to="/공식상영작"><a href="#">상영작 보러가기</a></router-link to="/">
+                <router-link to="/screen"><a href="#">상영작 보러가기</a></router-link to="/">
             </div>
         </div>
  </section>

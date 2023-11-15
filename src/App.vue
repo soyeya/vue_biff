@@ -39,10 +39,10 @@
 
 <script>
 
-import axios from 'axios';
 import History from './views/HistoryView.vue';
 import Biff2023 from './views/Biff2023View.vue';
 import Home from './views/MainView.vue';
+import Screen from './views/ScreenView.vue';
 import Footer from './views/FooterView.vue';
 
 
@@ -54,6 +54,7 @@ export default {
     Home,
     History,
     Biff2023,
+    Screen,
     Footer
  
   },
@@ -66,7 +67,7 @@ export default {
 
            { name : "biff" , href : "/biff" },
            { name : "2023Biff" , href : "/2023biff"},
-           { name : "공식상영작" , href : "/screening"}
+           { name : "screen" , href : "/screen"}
 
         ]
 

@@ -26,17 +26,15 @@ const routes = [
       return import('../views/Biff2023View.vue')
     }
   },
-
   {
-    path: '/screening',
-    name : 'screening',
-    component : function(){
-       
+    path: '/screen',
+    name: 'screen',
+    component: function () {
       return import('../views/ScreenView.vue')
-
     }
-
   }
+
+ 
 ]
 
 const router = new VueRouter({
