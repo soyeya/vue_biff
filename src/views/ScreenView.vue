@@ -41,7 +41,7 @@
 
   async created() {
   
-   const {data} = await axios.get("/json/Screen.json");
+   const {data} = await axios.get("/vue_biff/json/Screen.json");
    this.screenBox = data;
 
   

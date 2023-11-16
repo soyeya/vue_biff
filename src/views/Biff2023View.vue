@@ -72,7 +72,7 @@ import axios from 'axios';
 
    async created() {
 
-    const {data} = await axios.get("/json/Biff2023.json");
+    const {data} = await axios.get("/vue_biff/json/Biff2023.json");
     this.yearBox = data;
 
 

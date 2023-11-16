@@ -47,7 +47,7 @@
   
   async created(){
      
-    const {data} = await axios.get('/json/History.json');
+    const {data} = await axios.get('/vue_biff/json/History.json');
     this.biffBox = data;
   
   },
